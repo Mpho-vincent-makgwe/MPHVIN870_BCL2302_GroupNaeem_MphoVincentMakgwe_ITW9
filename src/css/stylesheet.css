@@ -1,0 +1,88 @@
+*{
+    background-color: #FAEBD7;
+}
+html{
+    font-family: monospace;
+    font-weight: 300 bold;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #4d6f6f;
+    width: 100% 800px;
+    margin: 50px auto 0;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+/* styling my header */
+header{
+    font-size: larger;
+}
+
+.head{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #4d6f6f;
+}
+
+/* styling my profile picture */
+.profile{
+    width: 100px;
+    height: 100px;
+    clip-path: circle();
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 50%;
+}
+picture{
+    background-color: #4d6f6f;
+}
+img{}
+
+
+/* this part is for my middle part that contains two sides */
+.main{
+    background: #2F4F4F;
+    background-color: #264848;
+    display: table;
+    margin: 10px 0;
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.left-part{
+    background: #ccc;
+    display:table-cell;
+    padding: 10px;
+    width: 40.5%;
+    vertical-align: middle;
+}
+
+.navt{}
+.navigation{}
+
+.right-part{
+    background: #BDB76B;
+    display:table-cell;
+    padding: -10px;
+    width: 40.5%;
+    vertical-align: middle;
+}
+.footer{
+    margin: 0;
+    padding: 0;
+}
+
+#skills{
+    background-color:  #BDB76B;
+}
