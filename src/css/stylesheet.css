@@ -7,82 +7,131 @@ html{
 }
 
 body{
+
     margin: 0;
     padding: 0;
 }
 
 .container{
+    display: grid;
+    grid:flex;
+    gap: 1.5px;
+    grid-template-rows:0fr 0fr 0fr 0fr;
+    border-radius: 1rem;
     background-color: #4d6f6f;
-    width: 100% 800px;
+    width: 100% 700px;
     margin: 50px auto 0;
+    margin-inline: auto;
     box-sizing: border-box;
     padding: 10px;
+    padding-block: 2rem;
 }
 
 
 /* styling my header */
 header{
     font-size: larger;
+    float: top;
 }
 
 .head{
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #4d6f6f;
+    background-image: url(https://www.bing.com/images/search?view=detailV2&ccid=J17oeZW3&id=6E9971D0DE7953AA89D4F0C00F5B5B5F45982995&thid=OIP.J17oeZW3bAYyB3DyHeUztAHaGp&mediaurl=https%3a%2f%2fi.pinimg.com%2foriginals%2ff0%2f53%2fe9%2ff053e95f8365f5c0005b26fba6af7881.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.275ee87995b76c06320770f21de533b4%3frik%3dlSmYRV9bWw%252fA8A%26pid%3dImgRaw%26r%3d0&exph=1346&expw=1500&q=Software+Engineering+Logo&simid=607986177967066985&FORM=IRPRST&ck=5C032CCBC3B42EB62B071D55F76FB5DC&selectedIndex=0);
+
 }
 
 /* styling my profile picture */
 .profile{
-    width: 100px;
-    height: 100px;
     clip-path: circle();
     margin: 0;
     padding: 0;
-    width: 50%;
-    height: 50%;
+    width: 20%;
+    height: 30%;
 }
 picture{
     background-color: #4d6f6f;
 }
 img{}
 
+.navbar{
+    width: fit-content;
+    height: fit-content;
+    background-position: 0;
+    background-color: aquamarine;
+    border-radius: 2rem;
+}
+
+
 
 /* this part is for my middle part that contains two sides */
 .main{
-    background: #2F4F4F;
-    background-color: #264848;
     display: table;
     margin: 10px 0;
     align-content: center;
     padding-left: 10px;
     padding-right: 10px;
-    vertical-align: middle;
+    background: #2F4F4F;
+    background-color: #264848;
 }
+    
 
-.left-part{
-    background: #ccc;
-    display:table-cell;
-    padding: 10px;
-    width: 40.5%;
-    vertical-align: middle;
-}
 
+
+
+
+
+
+/* styling my left part */
+.left-column{vertical-align: middle;display:table-cell;width: 50%;padding: 10px;}
+
+.list{}
+#left-part{}
+#Left-part{}
+nav{}
 .navt{}
 .navigation{}
 
-.right-part{
-    background: #BDB76B;
-    display:table-cell;
-    padding: -10px;
-    width: 40.5%;
-    vertical-align: middle;
-}
+/* styling my right part */
+
+.right-column{vertical-align: middle;display:table-cell;width: 50%;padding: 10px;}
+.right-part{}
+
+
 .footer{
     margin: 0;
     padding: 0;
 }
 
-#skills{
-    background-color:  #BDB76B;
+/* button used to open Contact me form fixed at the bottom of footer */
+.open-button{
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointers;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right:28px;
+    width:280px;
 }
+
+/* styling my form popup */
+.form-popup{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #fdcb98;
+    z-index: 9;
+}
+
+.form-container{
+    max-width:fit-content;
+    padding: 10px;
+    background-color: #FAEBD7; 
+}
+
+/* adding my media query dor tablet device */
