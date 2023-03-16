@@ -9,12 +9,13 @@
 </head>
 
 <body>
+    
     <div class="container">
 
         <aside class="navbar">
                 <nav  class="navbar">
                     <ul class="navbar">
-                        <li class="navbar"><a href=#Education" class="navbar">Education</a></li>
+                        <li class="navbar"><a href="#Education" class="navbar">Education</a></li>
                         <li class="navbar"><a href="#Experince" class="navbar">Experience</a></li>
                         <li class="navbar"><a href="#SkillsAndInterests" class="navbar">Skills And Interests</a></li>
                         <li class="navbar"><a href="#Contacts" class="navbar">Contacts</a></li>
@@ -25,12 +26,14 @@
         <header class="head">
             <div class="head">
                 <picture>
+                    <source srcset="./src/images/small.jpg" media="(max-width: 426px)">
+                    <source srcset="./src/images/medium.jpg" media="(max-width: 769px)">
                     <img src="./src/images/WhatsApp Image 2023-03-14 at 10.35.02.jpg" alt="My Profile" class="profile">
                 </picture>
                 
-                <h3 class="">Mpho Vincent Makgwe</h3>
+                <h3>Mpho Vincent Makgwe</h3>
                 <h1 class="">Software Engineering Student</h1>
-                <p class="">Student at <a href="https://learn.codespace.co.za" class="link" target="_blank">CodeSpace</a></p>
+                
             </div>
             
             
@@ -38,18 +41,26 @@
         </header>
 <section class="intro">
     <p>proud to be a programmer and I always get the job done.</p>
+    <p>Student at <a href="https://learn.codespace.co.za" class="link" target="_blank">CodeSpace</a></p>
 </section>
 
         <main class="main">
-<aside class="left-column">
+    <div class="block">
+        <aside class="left-column">
+
             <div class="left-part">
                 <h2 id="Education">Education</h2>
-                <span class="span1">2018</span>
+                <span>2018/Dec</span>
+                <p>Bafokeng Secondary School</p>
                 <p>Completed Matric</p>
-                <span class="span1">2019 - 2022</span>
+
+
+                <span>2019 - 2022/June</span>
+                <p>Orbit Tvet College</p>
                     <p>Mechanical Engineering</p>
 
-                <span class="span1">2022 - 2023</span>
+                <span>2022 - 2023/current</span>
+                <p>CodeSpace</p>
                     <p>Software Engineering</p>
 
                 <p></p>
@@ -57,51 +68,61 @@
             </div>
 </aside>
 
-<aside class="right-column">
+    </div>
+    <div class="block">
+        <aside class="right-column">
             <div class="right-part">
                 <h2 id="Experience">Experince</h2>
-                <p class="span2">HTML5</p>
-                <p class="span2">CSS</p>
-                <p class="span2">Intro to Web</p>
+                <p></p>
+                <p><a class="link" href="https://github.com/Mpho-vincent-makgwe"target="_blank">Projects</a></p>
+                <p>Intro to Web at <a href="https://learn.codespace.co.za" class="link" target="_blank">CodeSpace</a></p>
             </div>
 </aside>
-<aside class="bottom-column1">
+    </div>
+    <div class="block">
+        <aside class="bottom-column1">
             <div class="bottom-left-part">
                 <h2 id="SkillsAndInterests">Skills And Interests</h2>
-                <h4>Interests</h4>
+                <h4>Skills</h4>
                 <ul>
-                    <li>Gaming</li>
+                    <li>HTML5</li>
                     <li>Drawing</li>
-                    <li>Anime</li>
-                    <li>Music</li>
+                    <li>CSS</li>
+                    <li>Slack</li>
+                    <li>Figma</li>
                 </ul>
                 
             </div>
 </aside>
-<aside class="bottom-column2">
+    </div>
+    <div class="block">
+        <aside class="bottom-column2">
             <div class="bottom-right-part">
-                <h2 id="SkillsAndInterests">Skills And Interests</h2>
+                <br><br>
+                <h2 id="SkillsAndInterests"></h2>
                 <h4>Interests</h4>
                 <ul>
                     <li>Gaming</li>
-                    <li>Drawing</li>
+                    <li>AI Technology</li>
                     <li>Anime</li>
                     <li>Music</li>
                 </ul>
                 
             </div>
 </aside>
+    </div>
 
-                
-            
         </main>
 
         <footer class="footer">
             <!-- my contacts -->
             <h2 id="Contacts">Contacts</h2>
-            <p class="contact"><a href="">0603597941</a>
-            </p><span><a href="">Mphomakgwe@gmail.com</a></span>
-            <span></span>
+            <p><a class="cont" href="tel:0603597941" target="_blank">0603597941</a>
+            <p><a class="cont" href="https://api.whatsapp.com/send?phone=27603597941&text=Hello" target="_blank">Send WhatsApp Message</a>
+            </p><span><a class="link" href="mailto:mphomakgwe4@gmail.com" target="_blank">Mphomakgwe@gmail.com</a></span>
+            
+
+
 
 
 <!-- a button to open a Contact Me popup form -->
@@ -116,7 +137,7 @@
                 <h3>Contact Me</h3>
 <!-- name block -->
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" required>
+                <input class="textA"  type="text" id="name" name="user_name" required>
 
 <!-- surname and title bar -->
                 <label for="surname:">Surname:</label>
@@ -125,22 +146,22 @@
                     <option value="A">Mrs.</option>
                     <option value="A">Ms.</option>
                 </select>
-                <input type="text" id="surname" name="user_surname" required>
+                <input class="textA" type="text" id="surname" name="user_surname" required>
 
 
 
 <!-- phone contacts are u ploaded here-->
                 <label for="contact">Phone Numbers:</label>
-                <input type="text" id="contact" name="user_contact" required>
+                <input class="textA"  type="text" id="contact" name="user_contact" required>
 
 <!--user upload his/her mail here = mail block -->
                 <label for="mail">Email:</label>
-                <input type="mail" id="email" name="user_mail" required>
+                <input class="textA" type="mail" id="email" name="user_mail" required>
 
 
 <!-- choose the subject block -->
                 <label for="subject">Subject:</label>
-                <select id="subject" name="subject" required>
+                <select class="textA" id="subject" name="subject" required>
                     <option value="">--Please select--</option>
                     <option value="Interview">Interview</option>
                     <option value="Collaboration">Collaboration</option>
@@ -151,13 +172,13 @@
 
 <!-- my comment block -->
                 <label for="msg">Comment():</label>
-                <textarea name="user_message" id="msg"></textarea>
+                <textarea class="textA" name="user_message" id="msg"></textarea>
                 <input type="submit">
 
 
 
             </form>
-        <a class="close" href="#">&times;</a>
+        <a class="close" href="#">&times;close</a>
         <div class="outro">Thank you for visiting</div>
     </div>
 </div>

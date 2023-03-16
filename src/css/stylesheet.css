@@ -10,17 +10,19 @@ body{
     padding: 0;
 }
 
+
+
+/* styling my container */
 .container{
     display: grid;
     grid:flex;
     gap: 1.5px;
     grid-template-rows:0fr 0fr 0fr 0fr;
     border-radius: 1rem;
+    border-style:dashed 22px #0aed68;
     background-color: #4d6f6f;
     width: 100% 700px;
     margin: 5px auto 5px auto;
-    margin-inline: auto;
-    box-sizing: border-box;
     /* setting my margin at the top as zero and 10px at sides */
     padding: 0 10px;
 }
@@ -44,7 +46,7 @@ header{
 
 /* styling my profile picture */
 .profile{
-    clip-path: circle();
+    border-radius: 50px;
     margin: 0;
     padding: 0;
     width: 20%;
@@ -52,6 +54,7 @@ header{
     margin-top: 10px;
 }
 
+/* giving my navbar a position and style */
 .navbar{
     position: sticky;
     top: 0;
@@ -62,7 +65,10 @@ header{
     background-color: aquamarine;
     border-radius: 2rem;
     z-index: 1;
+    color:#ba07f6;
 }
+/* hovering my nav links */
+.navbar:hover{color: #f60757}
 
 
 
@@ -80,27 +86,17 @@ header{
     background: #2F4F4F;
     background-color: #264848;
 }
-    
-
-
-
-
-
 
 
 /* styling my left part */
 .left-column{vertical-align: middle;display:table-cell;width: 50%;padding: 10px;}
 
-.list{}
-#left-part{}
-nav{}
-.navt{}
-.navigation{}
+
 
 /* styling my right part */
 
 .right-column{vertical-align: middle;display:table-cell;width: 50%;padding: 10px;}
-.right-part{}
+
 
 .bottom-column1{vertical-align: middle;}
 .bottom-column2{vertical-align: middle;}
@@ -110,7 +106,9 @@ nav{}
     margin: 0;
     padding: 0;
 }
-/* test */
+
+.top{position: fixed;bottom: 23px;left:20px}
+/* Designing my button */
 
 .Button{
     background-color: #555;
@@ -130,6 +128,7 @@ nav{}
     cursor: pointer;
     transition: all 0.1s ease-out;
 }
+/* hovering my form button */
 .Button:hover{
     background: #264848;
 }
@@ -156,21 +155,22 @@ nav{}
     position: relative;
     transition: all 0.2s ease-in-out;
 }
-/* button used to open Contact me form fixed at the bottom of footer */
-
-
-button:hover{
-    background: #06D85F;
-}
 .form-container{
     margin: 70px auto;
     padding: 10px;
+    bottom: 23px;
+    right:28px;
     border-radius: 5px;
     max-width:fit-content;
     display: grid;
     position: relative;
     transition: all 0.2s ease-in-out;
 }
+
+/* button used to open Contact me form fixed at the bottom of footer */
+
+
+
 /* styling my form popup */
 .form-popup{
     color: black;
@@ -198,9 +198,45 @@ button:hover{
     outline:#555;
 }
 
+
+/* styling my luinks and hovering them */
 .link{
-    color:rgb(125, 171, 78);
+    color: #07f646;;
+}
+.link:hover{
+    color:rgb(255, 98, 0);
+}
+.cont{
+    color: #07f646;
+}
+.cont:hover{
+    color:rgb(255, 85, 0);
+}
+a:hover{
+    font-size: 150%;
 }
 
 
 /* adding my media query dor tablet device */
+@media only screen and (max-width: 1025px){
+    .navbar{font-size: x-large;}
+}
+
+@media only screen and (max-width: 769px){
+    .main{display:grid;grid-template-columns: 1fr 1fr;grid-template-rows: 1fr;}
+    .left-column{display:grid;grid-row-start:1;grid-row-end: 3;}
+    .navbar{font-size:medium;}
+    .profile{border-radius: 100px;}
+}
+
+
+@media only screen and (max-width: 426px){
+.main{display:inline-block;grid:none;grid-template-columns: none;grid-template-rows: none;}
+.right-column{display:inline-block;grid:none;grid-template-columns: none;grid-template-rows: none;}
+.navbar{font-size: xx-small;}
+.Button{width: fit-content;right:10px;bottom:10px;}
+.popupp{width: 50%;height:fit-content;bottom:30px;right:0px;}
+.profile{clip-path: circle();}
+}
+
+
