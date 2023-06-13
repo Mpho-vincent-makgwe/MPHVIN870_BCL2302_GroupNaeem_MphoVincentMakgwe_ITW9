@@ -10,6 +10,21 @@ body{
     padding: 0;
 }
 
+body:hover {
+animation: borderAnimation 1s infinite;
+}
+
+@keyframes borderAnimation {
+0% {
+    border-width: 22px;
+}
+50% {
+    border-width: 10px;
+}
+100% {
+    border-width: 22px;
+}
+}
 
 
 /* styling my container */
